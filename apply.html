@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- Tailwind CDN Link -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
 
   <script>
       tailwind.config = {
@@ -26,7 +26,7 @@
     </script>
 
   <!-- Stylesheet Link -->
-  <link rel="stylesheet" href=styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gradient-to-b from-lightblue to-darkblue md:pb-20 md:mt-20 sm:pb-4 sm:mt-4">
@@ -70,11 +70,31 @@
         <input type="text" id="description" name="" placeholder="Electrician" class="px-3 py-3 w-full border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400 mt-1">
 
       </div>
-      <button type="submit" style="font-family: 'Catamaran', sans-serif;" name="button" class="w-full flex justify-center bg-sky-500  hover:bg-sky-600 text-gray-100 p-3  rounded-lg tracking-wide font-bold text-gray  cursor-pointer transition ease-in duration-200 mt-2">Apply for Job</button>
+      <button type="submit" style="font-family: 'Catamaran', sans-serif;" name="button" class="w-full flex justify-center bg-sky-500  hover:bg-sky-600 text-gray-100 p-3  rounded-lg tracking-wide font-bold text-gray  cursor-pointer transition ease-in duration-200 mt-2 apply">Apply for Job</button>
 
     </div>
 
   </div>
+  <dialog style="font-family: 'Catamaran', sans-serif;" id="modal">
+    <div class="border border-black border-6 rounded-none py-4 px-4">
+
+
+  <ol class="list-decimal">
+    <img src="download.png" class="h-36 w-auto my-1 ml-2" alt="">
+    <h1 class="text-4xl font-bold pb-4">Warnings</h1>
+    <li>Be cautious of employers asking for your personal information such as social security number and other details.</li>
+    <li>Be wary of people asking for money in return for employment</li>
+    <li>If the contractor is paying too much money for little amount of work</li>
+    <button type="submit" style="font-family: 'Catamaran', sans-serif;" name="button" class="w-full flex justify-center bg-sky-500  hover:bg-sky-600 text-gray-100 p-3  rounded-lg tracking-wide font-bold text-gray  cursor-pointer transition ease-in duration-200 mt-2 submit">Submit</button>
+
+
+  </ol>
+  </div>
+
+  </dialog>
+
+
+  <script src="create.js" charset="utf-8"></script>
   </form>
 
 

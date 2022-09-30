@@ -1,7 +1,4 @@
-label{
-  font-family: 'Catamaran', sans-serif;
-}
-
-body{
-  background-color: red !important;
+img{
+  float: left;
+  padding-right: 3rem;
 }
